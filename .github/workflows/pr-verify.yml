@@ -17,8 +17,8 @@ jobs:
         with:
           dotnet-version: 8.0
 
-      - name: Build with dotnet Linux x64
-        run: dotnet build --configuration Release --runtime linux-x64 --self-contained false
+      - name: Build with dotnet
+        run: dotnet build --configuration Release
 
       - name: dotnetTest
         run: dotnet test --configuration Release --no-build
